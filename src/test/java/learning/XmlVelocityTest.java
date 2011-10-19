@@ -56,7 +56,7 @@ public class XmlVelocityTest extends AbstractJUnit4SpringContextTests {
   }
   
   @Test
-  public void failingTest() throws Exception {
+  public void greetingWrongPerson() throws Exception {
     // GIVEN
     String expected = "<greeter><greeting>Hello Foo!</greeting></greeter>";
     Map<String, Object> model = new HashMap<String, Object>();
