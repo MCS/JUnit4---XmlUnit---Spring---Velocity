@@ -5,6 +5,11 @@ import static org.custommonkey.xmlunit.XMLAssert.*;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Test;
 
+/**
+ * Some learning examples how XMLUnit works.
+ * 
+ * @author Marcus Krassmann
+ */
 public class XmlUnitTest {
   
   @Test
