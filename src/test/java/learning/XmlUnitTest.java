@@ -16,7 +16,8 @@ public class XmlUnitTest {
   public void compareIdenticalXmlStrings() throws Exception {
     String xml1 = "<root><node>Test</node></root>";
     String xml2 = "<root><node>Test</node></root>";
-    
+    XMLUnit.setIgnoreWhitespace(false);
+
     assertXMLEqual(xml1, xml2);
   }
 
@@ -24,7 +25,8 @@ public class XmlUnitTest {
   public void compareSimilarXmlStringsWithoutTolerance() throws Exception {
     String xml1 = "<root><node>Test</node></root>";
     String xml2 = "<root>\n  <node>Test</node>\n</root>";
-    
+    XMLUnit.setIgnoreWhitespace(false);
+
     assertXMLNotEqual(xml1, xml2);
   }
 
